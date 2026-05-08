@@ -47,26 +47,26 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 lg:px-12 bg-surface">
+    <section id="contact" className="py-16 lg:py-24 px-5 lg:px-12 bg-surface">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left */}
           <div className="min-w-0 overflow-hidden">
-            <p className="text-sm text-dark/50 italic mb-2">Let&apos;s</p>
+            <p className="text-sm text-dark/50 italic mb-1">Let&apos;s</p>
             <h2
-              className="text-[clamp(3rem,5.5vw,6rem)] font-extrabold leading-none uppercase text-dark"
+              className="text-[clamp(2.5rem,9vw,6rem)] font-extrabold leading-none uppercase text-dark"
               style={{ fontFamily: "var(--font-syne)" }}
             >
               GET IN
               <br />
               TOUCH
             </h2>
-            <p className="mt-6 text-sm text-dark/60 leading-relaxed max-w-xs">
+            <p className="mt-4 lg:mt-6 text-sm text-dark/60 leading-relaxed max-w-xs">
               Have a project, an opportunity, or just want to connect? I&apos;ll get back to
               you within 24 hours.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4">
+            <div className="mt-6 flex flex-col gap-3">
               {[
                 { label: "Email", value: "achraftiraryperso00@gmail.com" },
                 { label: "Phone", value: "+212 6 61 31 74 64" },

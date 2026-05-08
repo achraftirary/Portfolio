@@ -30,14 +30,46 @@ export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 px-6 lg:px-12 bg-white">
+    <section id="faq" className="py-16 lg:py-24 px-5 lg:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <p className="text-xs font-semibold tracking-[0.2em] text-dark/50 uppercase mb-4">
           06/ FAQ
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left heading */}
+        {/* Mobile: heading then accordion */}
+        <div className="lg:hidden flex flex-col gap-6">
+          <h2
+            className="text-[clamp(2.2rem,9vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase"
+            style={{ fontFamily: "var(--font-syne)" }}
+          >
+            FREQUENTLY
+            <br />
+            ASKED
+          </h2>
+          <div className="flex flex-col divide-y divide-gray-100">
+            {faqs.map(({ q, a }, i) => (
+              <div key={i} className="py-4">
+                <button
+                  onClick={() => setOpen(open === i ? null : i)}
+                  className="w-full flex items-center justify-between gap-3 text-left"
+                >
+                  <span className="font-semibold text-dark text-sm leading-snug" style={{ fontFamily: "var(--font-syne)" }}>
+                    {q}
+                  </span>
+                  <span className="shrink-0 w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center">
+                    {open === i ? <Minus size={13} /> : <Plus size={13} />}
+                  </span>
+                </button>
+                {open === i && (
+                  <p className="mt-3 text-sm text-dark/60 leading-relaxed">{a}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop: side-by-side with sticky heading */}
+        <div className="hidden lg:grid grid-cols-2 gap-16 items-start">
           <div className="lg:sticky lg:top-24 lg:self-start">
             <h2
               className="text-[clamp(2rem,2.8vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase"
@@ -50,8 +82,6 @@ export default function FAQSection() {
               QUESTIONS
             </h2>
           </div>
-
-          {/* Right — accordion */}
           <div className="flex flex-col divide-y divide-gray-100">
             {faqs.map(({ q, a }, i) => (
               <div key={i} className="py-5">
@@ -59,10 +89,7 @@ export default function FAQSection() {
                   onClick={() => setOpen(open === i ? null : i)}
                   className="w-full flex items-center justify-between gap-4 text-left group"
                 >
-                  <span
-                    className="font-semibold text-dark text-sm lg:text-base leading-snug group-hover:text-dark/70 transition-colors"
-                    style={{ fontFamily: "var(--font-syne)" }}
-                  >
+                  <span className="font-semibold text-dark text-sm lg:text-base leading-snug group-hover:text-dark/70 transition-colors" style={{ fontFamily: "var(--font-syne)" }}>
                     {q}
                   </span>
                   <span className="shrink-0 w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-dark transition-colors">

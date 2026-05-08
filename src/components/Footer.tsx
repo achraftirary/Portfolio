@@ -80,10 +80,10 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white pt-16 pb-8 px-6 lg:px-12">
+    <footer className="bg-dark text-white pt-12 lg:pt-16 pb-8 px-5 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Top row */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10 pb-16 border-b border-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10 pb-12 lg:pb-16 border-b border-white/10">
           {/* Brand */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <a
