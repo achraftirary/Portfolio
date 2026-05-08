@@ -49,7 +49,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 px-6 lg:px-12 bg-surface">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left */}
           <div className="min-w-0 overflow-hidden">
             <p className="text-sm text-dark/50 italic mb-2">Let&apos;s</p>

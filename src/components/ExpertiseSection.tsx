@@ -55,9 +55,9 @@ export default function ExpertiseSection() {
               className="rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 gap-0"
               style={{ background: bg }}
             >
-              {/* Visual accent */}
+              {/* Visual accent — hidden on mobile */}
               <div
-                className={`aspect-video lg:aspect-auto lg:min-h-64 flex items-center justify-center m-6 rounded-2xl ${
+                className={`hidden lg:flex lg:aspect-auto lg:min-h-64 items-center justify-center m-6 rounded-2xl ${
                   dark ? "bg-white/5" : "bg-black/5"
                 }`}
               >
@@ -70,7 +70,7 @@ export default function ExpertiseSection() {
               </div>
 
               {/* Content */}
-              <div className={`p-8 flex flex-col justify-between ${dark ? "text-white" : "text-dark"}`}>
+              <div className={`p-6 lg:p-8 flex flex-col justify-between ${dark ? "text-white" : "text-dark"}`}>
                 <div>
                   <p className={`text-xs font-bold tracking-[0.2em] uppercase mb-2 ${dark ? "text-lime" : "text-dark/40"}`}>
                     {num}

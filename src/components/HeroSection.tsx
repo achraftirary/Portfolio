@@ -50,10 +50,10 @@ export default function HeroSection() {
         </h1>
 
         {/* Sub-row */}
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
           {/* Left */}
           <div>
-            <p className="text-base text-dark/60 italic font-light leading-relaxed max-w-xs mb-8">
+            <p className="text-base text-dark/60 italic font-light leading-relaxed max-w-xs mb-6">
               Building robust applications and transforming data into impactful digital solutions.
             </p>
             <ul className="flex flex-col gap-3">
@@ -67,7 +67,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right */}
-          <div className="border border-gray-100 rounded-2xl p-8 bg-white/80 backdrop-blur-sm">
+          <div className="border border-gray-100 rounded-2xl p-6 lg:p-8 bg-white/80 backdrop-blur-sm">
             <p className="text-xs font-bold tracking-[0.2em] text-dark/40 uppercase mb-2">
               Engineering Student @ INSEA
             </p>

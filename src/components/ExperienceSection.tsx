@@ -52,11 +52,11 @@ export default function ExperienceSection() {
           </div>
 
           {/* Right — stats grid */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-4 lg:gap-6">
             {stats.map(({ icon: Icon, value, label }) => (
               <div
                 key={label}
-                className="bg-white rounded-2xl p-6 flex flex-col gap-4 hover:shadow-md transition-shadow"
+                className="bg-white rounded-2xl p-4 lg:p-6 flex flex-col gap-3 lg:gap-4 hover:shadow-md transition-shadow"
               >
                 <div className="w-10 h-10 rounded-full bg-lime flex items-center justify-center shrink-0">
                   <Icon size={18} className="text-dark" />

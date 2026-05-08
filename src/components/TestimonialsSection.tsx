@@ -84,7 +84,7 @@ export default function TestimonialsSection() {
           05/ PROJECTS
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left */}
           <div className="min-w-0 overflow-hidden">
             <h2
@@ -100,7 +100,7 @@ export default function TestimonialsSection() {
             </p>
 
             {/* Navigation */}
-            <div className="flex items-center gap-3 mt-10">
+            <div className="flex items-center gap-3 mt-8">
               <button
                 onClick={() => setIdx((idx - 1 + projects.length) % projects.length)}
                 className="w-10 h-10 rounded-full border border-dark flex items-center justify-center hover:bg-dark hover:text-white transition-all"
@@ -119,7 +119,7 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Dot selectors */}
-            <div className="flex gap-2 mt-6">
+            <div className="flex gap-2 mt-5 flex-wrap">
               {projects.map((_, i) => (
                 <button
                   key={i}
@@ -137,7 +137,7 @@ export default function TestimonialsSection() {
           </div>
 
           {/* Right — project card */}
-          <div className={`rounded-3xl p-8 lg:p-10 shadow-sm transition-all duration-300 ${"featured" in p && p.featured ? "bg-dark text-white" : "bg-white"}`}>
+          <div className={`rounded-3xl p-6 lg:p-10 shadow-sm transition-all duration-300 ${"featured" in p && p.featured ? "bg-dark text-white" : "bg-white"}`}>
             <div className="flex items-start justify-between mb-6">
               <div className={`w-14 h-14 rounded-2xl flex items-center justify-center font-bold text-sm shrink-0 ${"featured" in p && p.featured ? "bg-lime text-dark" : "bg-dark text-lime"}`}>
                 {p.initials}
