@@ -28,23 +28,24 @@ export default function HeroSection() {
         </span>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-5 lg:px-12 w-full flex-1 flex flex-col">
+      <div className="relative z-10 max-w-7xl mx-auto container-padding px-5 lg:px-12 w-full flex-1 flex flex-col">
         <p className="text-xs font-semibold tracking-[0.2em] text-dark/50 uppercase mt-6 lg:mt-8 mb-4 lg:mb-6">
           01/ INTRODUCTION
         </p>
 
         {/* Main heading */}
         <h1
-          className="text-[clamp(2.4rem,10vw,8.5rem)] font-extrabold leading-[0.9] tracking-tight uppercase"
+          className="hero-heading text-[clamp(1.6rem,8vw,5rem)] font-extrabold leading-[0.9] tracking-tight uppercase"
           style={{ fontFamily: "var(--font-syne)" }}
         >
           SOFTWARE &amp; DATA
-          <br />
-          <span className="inline-flex items-center gap-2 lg:gap-4">
+          <span className="block">
+            <span className="inline-flex items-center gap-2 lg:gap-4">
             <span className="inline-flex items-center justify-center w-[0.75em] h-[0.75em] rounded-full bg-lime text-dark text-[0.6em] font-black shrink-0">
               ✳
             </span>
             ENGINEER
+            </span>
           </span>
         </h1>
 
@@ -97,7 +98,8 @@ export default function HeroSection() {
               Engineering Student @ INSEA
             </p>
             <h2 className="text-xl font-bold mb-4 leading-tight" style={{ fontFamily: "var(--font-syne)" }}>
-              Building Digital<br />Solutions
+              <span className="block">Building Digital</span>
+              <span className="block">Solutions</span>
             </h2>
             <p className="text-sm text-dark/60 leading-relaxed mb-6">
               Specialized in data engineering and software development. Passionate about building impactful projects — from full-stack web apps to data pipelines and interactive dashboards.

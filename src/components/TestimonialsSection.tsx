@@ -7,10 +7,10 @@ const projects = [
   {
     num: "01",
     title: "One Step — Auto Check-In",
-    type: "In Progress — 2026",
-    company: "Royal Air Maroc",
-    desc: "Online automated check-in platform for Royal Air Maroc passengers. A streamlined one-step flow allowing travelers to check in, select seats, and receive boarding passes digitally — reducing friction at airport counters.",
-    tags: ["React", "Spring Boot", "REST API", "Figma"],
+    type: "End-of-Studies Internship (PFE) — Feb 2026 – Present",
+    company: "Royal Air Maroc · Casablanca",
+    desc: "Engineering an end-to-end Online Check-In Platform using Spring Boot 3, React 18, and Oracle with seamless Amadeus Airline API integration. Architecting a highly resilient, event-driven auto check-in pipeline on Apache Kafka with advanced retry logic, dead-letter queuing, exponential backoff, and crash-safe state machine. Implementing a custom transactional email system utilizing React Email and Node.js to automate boarding pass delivery and lifecycle notifications.",
+    tags: ["React 18", "Spring Boot 3", "Oracle", "Apache Kafka", "Node.js", "Amadeus API"],
     initials: "RA",
     github: null,
     inProgress: true,
@@ -91,9 +91,8 @@ export default function TestimonialsSection() {
               className="text-[clamp(2.5rem,3.5vw,4.5rem)] font-extrabold leading-tight uppercase"
               style={{ fontFamily: "var(--font-syne)" }}
             >
-              FEATURED
-              <br />
-              PROJECTS
+              <span className="block">FEATURED</span>
+              <span className="block">PROJECTS</span>
             </h2>
             <p className="text-sm text-dark/60 leading-relaxed mt-4 max-w-xs">
               6 real-world projects — from internships and client work to personal research.
@@ -104,12 +103,14 @@ export default function TestimonialsSection() {
               <button
                 onClick={() => setIdx((idx - 1 + projects.length) % projects.length)}
                 className="w-10 h-10 rounded-full border border-dark flex items-center justify-center hover:bg-dark hover:text-white transition-all"
+                aria-label="Previous project"
               >
                 <ChevronLeft size={18} />
               </button>
               <button
                 onClick={() => setIdx((idx + 1) % projects.length)}
                 className="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center hover:bg-lime hover:text-dark transition-all"
+                aria-label="Next project"
               >
                 <ChevronRight size={18} />
               </button>
@@ -129,6 +130,7 @@ export default function TestimonialsSection() {
                       ? "bg-dark text-white scale-110"
                       : "bg-white border border-gray-200 text-dark/40 hover:border-dark"
                   }`}
+                  aria-label={`Go to project ${i + 1}`}
                 >
                   {i + 1}
                 </button>

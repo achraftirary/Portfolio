@@ -25,7 +25,7 @@ const services = [
 
 export default function ExpertiseSection() {
   return (
-    <section id="expertise" className="py-16 lg:py-24 px-5 lg:px-12 bg-white">
+    <section id="expertise" className="py-16 lg:py-24 px-5 lg:px-12 bg-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto">
         <p className="text-xs font-semibold tracking-[0.2em] text-dark/50 uppercase mb-4">
           04/ MY EXPERTISE
@@ -33,14 +33,12 @@ export default function ExpertiseSection() {
 
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-4 mb-10 lg:mb-16">
           <h2
-            className="text-[clamp(2.2rem,8vw,5rem)] font-extrabold leading-tight uppercase"
+            className="max-w-[12ch] text-[clamp(1.35rem,7vw,2.2rem)] font-extrabold leading-[0.9] uppercase tracking-tight"
             style={{ fontFamily: "var(--font-syne)" }}
           >
-            INNOVATION
-            <br />
-            THROUGH
-            <br />
-            EXPERIENCE
+            <span className="block whitespace-nowrap">INNOVATION</span>
+            <span className="block whitespace-nowrap">THROUGH</span>
+            <span className="block whitespace-nowrap">EXPERIENCE</span>
           </h2>
           <p className="text-sm text-dark/60 leading-relaxed max-w-xs lg:text-right">
             From building financial analytics platforms to teaching the next generation of
@@ -56,7 +54,7 @@ export default function ExpertiseSection() {
               style={{ background: bg }}
             >
               {/* Mobile: simple card */}
-              <div className={`lg:hidden p-5 flex flex-col gap-4 ${dark ? "text-white" : "text-dark"}`}>
+              <div className={`lg:hidden p-4 flex flex-col gap-4 ${dark ? "text-white" : "text-dark"}`}>
                 <div className="flex items-center gap-3">
                   <span className={`text-xs font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded ${dark ? "bg-lime text-dark" : "bg-dark text-lime"}`}>
                     {num}
@@ -81,7 +79,7 @@ export default function ExpertiseSection() {
               </div>
 
               {/* Desktop: side-by-side */}
-              <div className="hidden lg:grid grid-cols-2 gap-0">
+                <div className="hidden lg:grid grid-cols-2 gap-0">
                 <div className={`aspect-auto min-h-64 flex items-center justify-center m-6 rounded-2xl ${dark ? "bg-white/5" : "bg-black/5"}`}>
                   <span
                     className="text-[5rem] font-extrabold opacity-10 select-none"

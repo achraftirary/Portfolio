@@ -5,7 +5,7 @@ export default function AchievementsBanner() {
         Achievements History
       </p>
       <p
-        className="text-white text-[clamp(4rem,12vw,10rem)] font-extrabold leading-none tracking-tight"
+        className="text-white text-[clamp(3rem,10vw,6.5rem)] font-extrabold leading-none tracking-tight"
         style={{ fontFamily: "var(--font-syne)" }}
       >
         2026

@@ -49,3 +49,17 @@ Thumbs.db
 CLAUDE.md
 AGENTS.md
 .claude/
+
+# Build artifacts & outputs
+.output/
+dist/
+build/
+
+# Local environment
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

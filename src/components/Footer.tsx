@@ -80,12 +80,12 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white pt-12 lg:pt-16 pb-8 px-5 lg:px-12">
+    <footer className="bg-dark text-white pt-10 lg:pt-16 pb-8 px-5 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Top row */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10 pb-12 lg:pb-16 border-b border-white/10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10 pb-12 lg:pb-16 border-b border-white/10">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-1">
             <a
               href="#home"
               className="text-2xl font-extrabold tracking-widest uppercase block mb-4"
@@ -105,7 +105,7 @@ export default function Footer() {
                   aria-label={label}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-lime hover:border-lime hover:text-dark transition-all duration-200"
+                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-lime hover:border-lime hover:text-dark transition-all duration-200"
                 >
                   {svg}
                 </a>

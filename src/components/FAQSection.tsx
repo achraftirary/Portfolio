@@ -42,9 +42,8 @@ export default function FAQSection() {
             className="text-[clamp(2.2rem,9vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase"
             style={{ fontFamily: "var(--font-syne)" }}
           >
-            FREQUENTLY
-            <br />
-            ASKED
+            <span className="block">FREQUENTLY</span>
+            <span className="block">ASKED</span>
           </h2>
           <div className="flex flex-col divide-y divide-gray-100">
             {faqs.map(({ q, a }, i) => (
@@ -56,9 +55,9 @@ export default function FAQSection() {
                   <span className="font-semibold text-dark text-sm leading-snug" style={{ fontFamily: "var(--font-syne)" }}>
                     {q}
                   </span>
-                  <span className="shrink-0 w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center">
-                    {open === i ? <Minus size={13} /> : <Plus size={13} />}
-                  </span>
+                    <span className="shrink-0 w-9 h-9 lg:w-7 lg:h-7 rounded-full border border-gray-200 flex items-center justify-center touch-target">
+                      {open === i ? <Minus size={13} /> : <Plus size={13} />}
+                    </span>
                 </button>
                 {open === i && (
                   <p className="mt-3 text-sm text-dark/60 leading-relaxed">{a}</p>
@@ -75,11 +74,9 @@ export default function FAQSection() {
               className="text-[clamp(2rem,2.8vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase"
               style={{ fontFamily: "var(--font-syne)" }}
             >
-              FREQUENTLY
-              <br />
-              ASKED
-              <br />
-              QUESTIONS
+              <span className="block">FREQUENTLY</span>
+              <span className="block">ASKED</span>
+              <span className="block">QUESTIONS</span>
             </h2>
           </div>
           <div className="flex flex-col divide-y divide-gray-100">
@@ -92,7 +89,7 @@ export default function FAQSection() {
                   <span className="font-semibold text-dark text-sm lg:text-base leading-snug group-hover:text-dark/70 transition-colors" style={{ fontFamily: "var(--font-syne)" }}>
                     {q}
                   </span>
-                  <span className="shrink-0 w-7 h-7 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-dark transition-colors">
+                  <span className="shrink-0 w-9 h-9 lg:w-7 lg:h-7 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-dark transition-colors touch-target">
                     {open === i ? <Minus size={14} /> : <Plus size={14} />}
                   </span>
                 </button>

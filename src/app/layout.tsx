@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   title: "Achraf Tirary — Software & Data Engineer",
   description:
     "Software and Data Engineering student at INSEA. Full-stack developer, data engineer, and builder of impactful digital solutions. Rabat, Morocco.",
+  icons: {
+    icon: "/favicon.svg",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -25,6 +33,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${syne.variable} ${inter.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      </head>
       <body className="min-h-screen">{children}</body>
     </html>
   );

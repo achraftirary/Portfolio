@@ -21,6 +21,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Prevent background scroll when mobile menu is open
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.body.style.overflow = open ? "hidden" : "";
+    }
+    return () => {
+      if (typeof document !== "undefined") document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -66,7 +76,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-6 flex flex-col gap-5">
+        <div className="md:hidden fixed top-16 left-0 right-0 z-50 bg-white border-t border-gray-100 px-6 py-6 flex flex-col gap-5">
           {navLinks.map((l) => (
             <a
               key={l.label}

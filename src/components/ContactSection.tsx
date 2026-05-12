@@ -57,9 +57,8 @@ export default function ContactSection() {
               className="text-[clamp(2.5rem,9vw,6rem)] font-extrabold leading-none uppercase text-dark"
               style={{ fontFamily: "var(--font-syne)" }}
             >
-              GET IN
-              <br />
-              TOUCH
+              <span className="block">GET IN</span>
+              <span className="block">TOUCH</span>
             </h2>
             <p className="mt-4 lg:mt-6 text-sm text-dark/60 leading-relaxed max-w-xs">
               Have a project, an opportunity, or just want to connect? I&apos;ll get back to
@@ -69,7 +68,7 @@ export default function ContactSection() {
             <div className="mt-6 flex flex-col gap-3">
               {[
                 { label: "Email", value: "achraftiraryperso00@gmail.com" },
-                { label: "Phone", value: "+212 6 61 31 74 64" },
+                { label: "Phone", value: "+212 6 78 62 41 27" },
                 { label: "Location", value: "Rabat, Morocco" },
                 { label: "LinkedIn", value: "achraf-tirary" },
               ].map(({ label, value }) => (
@@ -106,7 +105,7 @@ export default function ContactSection() {
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="bg-white rounded-3xl p-8 lg:p-10 flex flex-col gap-5 shadow-sm"
+              className="bg-white rounded-3xl p-6 lg:p-10 flex flex-col gap-5 shadow-sm"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="flex flex-col gap-1.5">
@@ -202,7 +201,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={!agreed || status === "loading"}
-                className="flex items-center justify-center gap-2 bg-dark text-white font-bold text-sm px-6 py-4 rounded-full hover:bg-lime hover:text-dark transition-all duration-200 mt-2 disabled:opacity-40 disabled:cursor-not-allowed"
+                className="flex items-center justify-center gap-2 bg-dark text-white font-bold text-sm px-4 py-3 lg:px-6 lg:py-4 rounded-full hover:bg-lime hover:text-dark transition-all duration-200 mt-2 disabled:opacity-40 disabled:cursor-not-allowed touch-target"
               >
                 {status === "loading" ? (
                   <>

@@ -35,7 +35,7 @@ export default function ExperienceSection() {
           {/* Stats grid — 2x2 on mobile */}
           <div className="grid grid-cols-2 gap-3">
             {stats.map(({ icon: Icon, value, label }) => (
-              <div key={label} className="bg-white rounded-2xl p-4 flex flex-col gap-3">
+              <div key={label} className="bg-white rounded-2xl p-3 flex flex-col gap-3">
                 <div className="w-9 h-9 rounded-full bg-lime flex items-center justify-center shrink-0">
                   <Icon size={16} className="text-dark" />
                 </div>

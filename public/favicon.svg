@@ -1,0 +1,34 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#grad1)" opacity="0.15"/>
+  
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Code bracket left -->
+  <path d="M 60 70 L 50 100 L 60 130" fill="none" stroke="url(#grad1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Code bracket right -->
+  <path d="M 140 70 L 150 100 L 140 130" fill="none" stroke="url(#grad1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Center dot accent -->
+  <circle cx="100" cy="100" r="5" fill="url(#grad2)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="75" r="3" fill="url(#grad2)" opacity="0.6"/>
+  <circle cx="120" cy="125" r="3" fill="url(#grad2)" opacity="0.6"/>
+  <circle cx="75" cy="120" r="2" fill="url(#grad1)" opacity="0.5"/>
+  <circle cx="125" cy="80" r="2" fill="url(#grad1)" opacity="0.5"/>
+</svg>

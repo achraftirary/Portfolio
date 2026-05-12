@@ -57,7 +57,7 @@ export default function AboutSection() {
 
           <a
             href="#expertise"
-            className="inline-flex items-center gap-2 border border-dark text-dark text-sm font-bold px-6 py-3 rounded-full hover:bg-dark hover:text-white transition-all duration-200 w-fit"
+            className="inline-flex items-center gap-2 border border-dark text-dark text-sm font-bold px-4 py-2.5 lg:px-6 lg:py-3 rounded-full hover:bg-dark hover:text-white transition-all duration-200 w-fit touch-target"
           >
             View My Skills <ArrowRight size={16} />
           </a>
@@ -88,7 +88,7 @@ export default function AboutSection() {
             </div>
             <a
               href="#expertise"
-              className="inline-flex items-center gap-2 border border-dark text-dark text-sm font-bold px-6 py-3 rounded-full hover:bg-dark hover:text-white transition-all duration-200"
+              className="inline-flex items-center gap-2 border border-dark text-dark text-sm font-bold px-4 py-2.5 lg:px-6 lg:py-3 rounded-full hover:bg-dark hover:text-white transition-all duration-200 touch-target"
             >
               View My Skills <ArrowRight size={16} />
             </a>
