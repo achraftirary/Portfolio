@@ -33,7 +33,7 @@ export default function ExpertiseSection() {
 
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-4 mb-10 lg:mb-16">
           <h2
-            className="max-w-[8.5ch] text-[clamp(1.7rem,8vw,2.4rem)] font-extrabold leading-[0.92] uppercase tracking-tight sm:max-w-[10ch] lg:max-w-[12ch] lg:text-[clamp(1.35rem,7vw,2.2rem)]"
+            className="text-[clamp(1.75rem,8vw,2.5rem)] font-extrabold leading-[0.9] uppercase tracking-tight lg:text-[clamp(1.8rem,6vw,2.5rem)]"
             style={{ fontFamily: "var(--font-syne)" }}
           >
             <span className="block">INNOVATION</span>

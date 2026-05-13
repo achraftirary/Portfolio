@@ -39,7 +39,7 @@ export default function FAQSection() {
         {/* Mobile: heading then accordion */}
         <div className="lg:hidden flex flex-col gap-6">
           <h2
-            className="text-[clamp(2.2rem,9vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase"
+            className="text-[clamp(1.8rem,8vw,3rem)] font-extrabold leading-tight tracking-tight uppercase"
             style={{ fontFamily: "var(--font-syne)" }}
           >
             <span className="block">FREQUENTLY</span>
@@ -71,7 +71,7 @@ export default function FAQSection() {
         <div className="hidden lg:grid grid-cols-2 gap-16 items-start">
           <div className="lg:sticky lg:top-24 lg:self-start">
             <h2
-              className="max-w-[8ch] text-[clamp(1.8rem,2.8vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase lg:max-w-none"
+              className="text-[clamp(2rem,3vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase"
               style={{ fontFamily: "var(--font-syne)" }}
             >
               <span className="block">FREQUENTLY</span>

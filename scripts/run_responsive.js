@@ -25,10 +25,14 @@ async function run() {
 
   const URL = process.env.TARGET_URL || 'http://localhost:3000/';
   const viewports = [
+    { name: 'Galaxy-S21', width: 360, height: 800 },
     { name: 'iPhone-SE', width: 375, height: 667 },
+    { name: 'iPhone-14-Plus', width: 430, height: 932 },
     { name: 'Pixel-4', width: 411, height: 731 },
-    { name: 'iPad', width: 768, height: 1024 },
-    { name: 'Desktop', width: 1280, height: 800 },
+    { name: 'iPad-Air', width: 768, height: 1024 },
+    { name: 'iPad-Pro', width: 1024, height: 1366 },
+    { name: 'Desktop-1280', width: 1280, height: 800 },
+    { name: 'Desktop-1920', width: 1920, height: 1080 },
   ];
 
   fs.mkdirSync('.output', { recursive: true });
