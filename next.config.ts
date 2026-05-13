@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   basePath: "/Portfolio",
+  allowedDevOrigins: ["192.168.1.128"],
   output: "export",
   trailingSlash: true,
   images: {

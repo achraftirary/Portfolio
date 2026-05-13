@@ -33,12 +33,12 @@ export default function ExpertiseSection() {
 
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-4 mb-10 lg:mb-16">
           <h2
-            className="max-w-[12ch] text-[clamp(1.35rem,7vw,2.2rem)] font-extrabold leading-[0.9] uppercase tracking-tight"
+            className="max-w-[8.5ch] text-[clamp(1.7rem,8vw,2.4rem)] font-extrabold leading-[0.92] uppercase tracking-tight sm:max-w-[10ch] lg:max-w-[12ch] lg:text-[clamp(1.35rem,7vw,2.2rem)]"
             style={{ fontFamily: "var(--font-syne)" }}
           >
-            <span className="block whitespace-nowrap">INNOVATION</span>
-            <span className="block whitespace-nowrap">THROUGH</span>
-            <span className="block whitespace-nowrap">EXPERIENCE</span>
+            <span className="block">INNOVATION</span>
+            <span className="block">THROUGH</span>
+            <span className="block">EXPERIENCE</span>
           </h2>
           <p className="text-sm text-dark/60 leading-relaxed max-w-xs lg:text-right">
             From building financial analytics platforms to teaching the next generation of

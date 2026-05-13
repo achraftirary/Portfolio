@@ -71,7 +71,7 @@ export default function FAQSection() {
         <div className="hidden lg:grid grid-cols-2 gap-16 items-start">
           <div className="lg:sticky lg:top-24 lg:self-start">
             <h2
-              className="text-[clamp(2rem,2.8vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase"
+              className="max-w-[8ch] text-[clamp(1.8rem,2.8vw,3.5rem)] font-extrabold leading-tight tracking-tight uppercase lg:max-w-none"
               style={{ fontFamily: "var(--font-syne)" }}
             >
               <span className="block">FREQUENTLY</span>

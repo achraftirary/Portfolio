@@ -96,7 +96,7 @@ export default function Footer() {
             <p className="text-xs text-white/50 leading-relaxed max-w-xs mb-1">
               Software &amp; Data Engineering Student at INSEA, Rabat, Morocco.
             </p>
-            <p className="text-xs text-white/30 mb-6">+212 6 61 31 74 64</p>
+            <p className="text-xs text-white/30 mb-6">+212 6 78 62 41 27</p>
             <div className="flex items-center gap-3">
               {socials.map(({ label, href, svg }) => (
                 <a
