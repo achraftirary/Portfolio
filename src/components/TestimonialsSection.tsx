@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
           {/* Left */}
           <div className="min-w-0 overflow-hidden">
             <h2
-              className="text-[clamp(2.5rem,3.5vw,4.5rem)] font-extrabold leading-tight uppercase"
+              className="text-[clamp(1.8rem,8vw,3rem)] font-extrabold leading-tight uppercase"
               style={{ fontFamily: "var(--font-syne)" }}
             >
               <span className="block">FEATURED</span>
