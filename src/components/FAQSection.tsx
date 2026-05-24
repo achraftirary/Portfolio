@@ -5,24 +5,24 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "What technologies do you work with?",
-    a: "I work across the full stack: Python, JavaScript, Java, and PHP on the backend (Django, Spring Boot); React and Angular on the frontend; PostgreSQL and SQL for databases; and Power BI, Pandas, and ETL tooling for data engineering.",
+    q: "What kind of role are you looking for?",
+    a: "I’m currently in my end-of-studies internship at Royal Air Maroc and actively looking for a full-time role in software engineering, data engineering, or DevOps — ideally in any of those paths with an AI focus.",
   },
   {
-    q: "Are you available for internships or freelance work?",
-    a: "Yes! I'm actively seeking internship opportunities and am open to freelance projects — especially in full-stack development, data engineering, or software architecture. Reach out via the contact form.",
+    q: "What makes you a strong candidate?",
+    a: "I build production-ready software with Java, Spring Boot, microservices, Docker, RabbitMQ, and clean architectural patterns. My work combines backend engineering, integration design, documentation, and delivery best practices.",
   },
   {
-    q: "Can you work on data-heavy or analytical projects?",
-    a: "Absolutely. I have hands-on experience building ETL pipelines, data warehouses, and Power BI dashboards. My academic and internship projects have focused heavily on transforming raw data into actionable insights.",
+    q: "Which projects should I pay attention to?",
+    a: "My most representative work includes the Royal Air Maroc web check-in system, MaroclearAnalytics, L-Atelier Digital, Atlas Gym APP, and O2 SleepApnea APP. They show my ability to ship real business solutions with strong architecture and integration work.",
   },
   {
-    q: "Do you have experience with agile environments?",
-    a: "Yes — during my internship at Capgemini Engineering I was exposed to agile project environments and participated in strategic meetings. I also use Jira/Scrum for project management.",
+    q: "Are you available for a job or internship now?",
+    a: "Yes. I’m open to full-time opportunities in software engineering, data engineering, or DevOps, especially roles that value clean code, architecture, documentation, and reliable delivery.",
   },
   {
     q: "What languages do you speak?",
-    a: "I'm fluent in French (native), English (professional), and Arabic (native). I can work in international environments and communicate clearly in both technical and non-technical contexts.",
+    a: "I work comfortably in French, English, and Arabic, which helps me collaborate in international and multilingual teams.",
   },
 ];
 

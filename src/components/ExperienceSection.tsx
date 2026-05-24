@@ -72,9 +72,9 @@ export default function ExperienceSection() {
               MY<br />JOURNEY
             </h2>
             <p className="text-sm text-dark/60 leading-relaxed max-w-sm">
-              Engineering student at INSEA, specializing in software and data engineering.
+              Engineering student at INSEA, specializing in software engineering and distributed systems.
               From internships at Capgemini and Maroclear to teaching Python at Coding Giants —
-              I bring curiosity, commitment, and a passion for high-impact projects.
+              I bring curiosity, commitment, and a passion for high-impact projects built with clean architecture and solid engineering practices.
             </p>
             <div className="mt-8 flex flex-col gap-4">
               {timeline.map(({ year, event }) => (

@@ -2,13 +2,16 @@ const items = [
   "PYTHON",
   "REACT",
   "DJANGO",
+  "MICROSERVICES",
+  "DOCKER",
   "ANGULAR",
   "SPRING BOOT",
   "POSTGRESQL",
-  "POWER BI",
+  "DOCUMENTATION",
+  "TESTING",
   "JAVASCRIPT",
   "JAVA",
-  "DATA ENGINEERING",
+  "CLEAN ARCHITECTURE",
 ];
 
 export default function MarqueeBanner() {

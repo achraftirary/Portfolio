@@ -2,10 +2,10 @@ const footerCols = [
   {
     title: "Expertise",
     links: [
-      { label: "Full-Stack Dev", href: "#expertise" },
-      { label: "Data Engineering", href: "#expertise" },
+      { label: "Microservices", href: "#expertise" },
+      { label: "Docker & Delivery", href: "#expertise" },
       { label: "Software Architecture", href: "#expertise" },
-      { label: "Technical Mentoring", href: "#expertise" },
+      { label: "Documentation", href: "#expertise" },
     ],
   },
   {
@@ -94,7 +94,7 @@ export default function Footer() {
               ACHRAF<span className="text-lime">.</span>
             </a>
             <p className="text-xs text-white/50 leading-relaxed max-w-xs mb-1">
-              Software &amp; Data Engineering Student at INSEA, Rabat, Morocco.
+              Software Engineering Student at INSEA, Casablanca, Morocco.
             </p>
             <p className="text-xs text-white/30 mb-6">+212 6 78 62 41 27</p>
             <div className="flex items-center gap-3">

@@ -2,23 +2,23 @@ const services = [
   {
     num: "01",
     title: "Software Engineering",
-    desc: "End-to-end web applications from interactive React/Angular frontends to robust Django and Spring Boot backends. Built MaroclearAnalytics and InseApp from scratch.",
-    tags: ["React", "Angular", "Django", "Spring Boot", "PostgreSQL", "PHP"],
+    desc: "End-to-end business applications from React/Vite frontends to resilient Spring Boot services. I design clean APIs, modular backends, and delivery-ready systems with documentation and maintainability in mind.",
+    tags: ["Java 21", "Spring Boot 3", "Hexagonal Architecture", "React", "TypeScript", "Docker"],
     bg: "#f5f5f2",
   },
   {
     num: "02",
-    title: "Data Engineering",
-    desc: "Automated ETL pipelines for Excel processing, data warehouse construction, interactive Power BI dashboards, and sentiment analysis on large datasets.",
-    tags: ["Python", "Power BI", "ETL", "SQL", "Data Warehousing", "Pandas"],
+    title: "Microservices & Integration",
+    desc: "Distributed systems built with microservices, event-driven messaging, and resilient integrations. For the Royal Air Maroc project, this means automated check-in workflows, retries, outbox-based messaging, and reliable passenger processing.",
+    tags: ["Microservices", "RabbitMQ", "Transactional Outbox", "Amadeus API", "REST API", "Oracle"],
     bg: "#0a0a0a",
     dark: true,
   },
   {
     num: "03",
-    title: "Business Analysis & Design",
-    desc: "I excel at spotting business problems others miss — translating complex real-world processes into clear UML or BPMN models, then proposing the most adapted solution. I also bring strong Figma skills to prototype and validate solutions visually before a single line of code is written.",
-    tags: ["UML", "BPMN", "Figma", "2TUP", "Enterprise Architect", "Jira/Scrum"],
+    title: "DevOps, Quality & Delivery",
+    desc: "I care about code quality, documentation, and stable delivery. I use Docker, Git, testing, and clear technical writing to keep systems understandable, maintainable, and production-ready.",
+    tags: ["Docker", "Testing", "CI/CD", "Git", "Documentation", "DevOps"],
     bg: "#f5f5f2",
   },
 ];
@@ -36,13 +36,13 @@ export default function ExpertiseSection() {
             className="text-[clamp(1.75rem,8vw,2.5rem)] font-extrabold leading-[0.9] uppercase tracking-tight lg:text-[clamp(1.8rem,6vw,2.5rem)]"
             style={{ fontFamily: "var(--font-syne)" }}
           >
-            <span className="block">INNOVATION</span>
+            <span className="block">ARCHITECTURE</span>
             <span className="block">THROUGH</span>
-            <span className="block">EXPERIENCE</span>
+            <span className="block">PRACTICE</span>
           </h2>
           <p className="text-sm text-dark/60 leading-relaxed max-w-xs lg:text-right">
-            From building financial analytics platforms to teaching the next generation of
-            developers — I deliver with a keen eye for detail and a passion for impact.
+            From designing clean backend services to shipping production-ready systems — I
+            deliver with a keen eye for detail, maintainability, and long-term impact.
           </p>
         </div>
 

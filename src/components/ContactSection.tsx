@@ -69,7 +69,7 @@ export default function ContactSection() {
               {[
                 { label: "Email", value: "achraftiraryperso00@gmail.com" },
                 { label: "Phone", value: "+212 6 78 62 41 27" },
-                { label: "Location", value: "Rabat, Morocco" },
+                { label: "Location", value: "Casablanca, Morocco" },
                 { label: "LinkedIn", value: "achraf-tirary" },
               ].map(({ label, value }) => (
                 <div key={label} className="flex items-start gap-3 text-sm">

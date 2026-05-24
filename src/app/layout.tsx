@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Achraf Tirary — Software & Data Engineer",
+  title: "Achraf Tirary — Software Engineer",
   description:
-    "Software and Data Engineering student at INSEA. Full-stack developer, data engineer, and builder of impactful digital solutions. Rabat, Morocco.",
+    "Software Engineering student at INSEA in Casablanca. Focused on microservices, Docker, backend architecture, documentation, and production-grade delivery.",
   icons: {
     icon: "/favicon.svg",
   },

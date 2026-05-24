@@ -6,11 +6,11 @@ import { ChevronLeft, ChevronRight, ExternalLink, Lock } from "lucide-react";
 const projects = [
   {
     num: "01",
-    title: "One Step — Auto Check-In",
+    title: "Web Check-in System",
     type: "End-of-Studies Internship (PFE) — Feb 2026 – Present",
     company: "Royal Air Maroc · Casablanca",
-    desc: "Engineering an end-to-end Online Check-In Platform using Spring Boot 3, React 18, and Oracle with seamless Amadeus Airline API integration. Architecting a highly resilient, event-driven auto check-in pipeline on Apache Kafka with advanced retry logic, dead-letter queuing, exponential backoff, and crash-safe state machine. Implementing a custom transactional email system utilizing React Email and Node.js to automate boarding pass delivery and lifecycle notifications.",
-    tags: ["React 18", "Spring Boot 3", "Oracle", "Apache Kafka", "Node.js", "Amadeus API"],
+    desc: "Full-stack online check-in system built as a final-year project to let passengers complete boarding autonomously. The backend follows Hexagonal Architecture (Ports & Adapters) with Spring Boot 3, Java 21, JPA/Hibernate, and Oracle, while the frontend is a multilingual React + TypeScript app powered by Vite. The system integrates Amadeus Digital Touchpoints for flight search, regulatory requirements, seat selection, passenger acceptance, and boarding passes. A scheduled auto check-in pipeline uses optimistic locking (@Version), a configurable retry window, and RabbitMQ with the Transactional Outbox pattern to keep processing resilient. By reducing manual airport workload, improving passenger experience, and supporting stronger retention and loyalty, the system helps the airline capture more operational and customer value, while Gmail SMTP handles transactional email delivery.",
+    tags: ["Java 21", "Spring Boot 3", "Hexagonal Architecture", "Oracle", "RabbitMQ", "Amadeus API", "React", "TypeScript"],
     initials: "RA",
     github: null,
     inProgress: true,
@@ -22,7 +22,7 @@ const projects = [
     type: "Internship (PFA) — 2026",
     company: "Maroclear · Casablanca",
     desc: "Internal financial data analysis platform: automated ETL pipeline for Excel processing, interactive React dashboards, PDF/Excel report generation, and a Django/PostgreSQL backend with full role management.",
-    tags: ["React", "Django", "PostgreSQL", "ETL", "Power BI"],
+    tags: ["React", "Django", "PostgreSQL", "ETL", "Dashboards"],
     initials: "MA",
     github: null,
     inProgress: false,

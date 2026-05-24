@@ -1,11 +1,11 @@
 import { ArrowRight } from "lucide-react";
 
 const skills = [
-  { category: "Languages", items: ["Python", "JavaScript", "Java", "PHP"] },
-  { category: "Frontend", items: ["React", "Angular", "HTML/CSS"] },
-  { category: "Backend", items: ["Django", "Spring Boot", "PostgreSQL"] },
-  { category: "Data & Tools", items: ["Power BI", "ETL", "Git", "Jira"] },
-  { category: "Design & Analysis", items: ["Figma", "UML", "BPMN", "Enterprise Architect"] },
+  { category: "Languages", items: ["Java", "TypeScript", "Python", "JavaScript"] },
+  { category: "Backend & Architecture", items: ["Spring Boot 3", "Microservices", "Hexagonal Architecture", "JPA/Hibernate"] },
+  { category: "Frontend", items: ["React", "Vite", "HTML/CSS", "Angular"] },
+  { category: "Messaging & Integration", items: ["RabbitMQ", "Docker", "Transactional Outbox", "Amadeus API"] },
+  { category: "Quality & Delivery", items: ["Git", "CI/CD", "Testing", "Documentation"] },
 ];
 
 export default function AboutSection() {
@@ -22,10 +22,10 @@ export default function AboutSection() {
             className="text-[1.35rem] font-semibold leading-snug italic text-dark"
             style={{ fontFamily: "var(--font-syne)" }}
           >
-            "Curious, committed, and passionate about the digital world."
+            "Curious, committed, and focused on building reliable software with solid engineering."
           </p>
           <p className="text-sm text-dark/60 leading-relaxed">
-            Engineering student at INSEA (Rabat, Morocco), specializing in data and software engineering. Hands-on experience in full-stack applications, ETL pipelines, and data dashboards. President of the Forum Geni Entreprises Club and Python instructor at Coding Giants.
+            I’m an engineering student at INSEA in Casablanca, currently completing my end-of-studies internship at Royal Air Maroc. I build microservices, production-ready APIs, and well-documented systems, and I’m looking for a full-time role in software engineering, data engineering, or DevOps with strong engineering best practices.
           </p>
           <div className="flex flex-wrap gap-2">
             {["French", "English", "Arabic"].map((lang) => (
@@ -38,7 +38,7 @@ export default function AboutSection() {
           {/* Skills card — compact on mobile */}
           <div className="bg-dark rounded-2xl p-5 text-white">
             <p className="text-lime text-xs font-bold tracking-[0.2em] uppercase mb-1">Technical Stack</p>
-            <h3 className="text-lg font-extrabold mb-5" style={{ fontFamily: "var(--font-syne)" }}>Skills Overview</h3>
+            <h3 className="text-lg font-extrabold mb-5" style={{ fontFamily: "var(--font-syne)" }}>Microservices / DevOps / Quality</h3>
             <div className="flex flex-col gap-4">
               {skills.map(({ category, items }) => (
                 <div key={category}>
@@ -70,14 +70,15 @@ export default function AboutSection() {
               className="text-[clamp(1.4rem,3vw,2.2rem)] font-semibold leading-snug italic text-dark mb-8"
               style={{ fontFamily: "var(--font-syne)" }}
             >
-              "Curious, committed, and passionate about the digital world — I aim to contribute
-              to projects with high social or technological impact."
+              "Curious, committed, and focused on building reliable software with solid engineering —
+              I aim to contribute to projects with high social or technological impact."
             </p>
             <p className="text-sm text-dark/60 leading-relaxed mb-8 max-w-md">
-              Engineering student at INSEA (Rabat, Morocco), specializing in data and software
-              engineering. I have hands-on experience building full-stack applications, ETL
-              pipelines, and data dashboards. I also served as President of the Forum Geni
-              Entreprises Club and taught Python at Coding Giants.
+              I’m an engineering student at INSEA in Casablanca, currently completing my
+              end-of-studies internship at Royal Air Maroc. I have hands-on experience building
+              microservices, production-grade APIs, and well-documented systems, and I’m now
+              looking for a full-time role in software engineering, data engineering, or DevOps
+              with strong engineering best practices.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               {["French", "English", "Arabic"].map((lang) => (
@@ -96,7 +97,7 @@ export default function AboutSection() {
 
           <div className="bg-dark rounded-3xl p-8 text-white">
             <p className="text-lime text-xs font-bold tracking-[0.2em] uppercase mb-2">Technical Stack</p>
-            <h3 className="text-2xl font-extrabold mb-8" style={{ fontFamily: "var(--font-syne)" }}>Skills Overview</h3>
+            <h3 className="text-2xl font-extrabold mb-8" style={{ fontFamily: "var(--font-syne)" }}>Microservices / DevOps / Quality</h3>
             <div className="flex flex-col gap-5">
               {skills.map(({ category, items }) => (
                 <div key={category}>
@@ -118,7 +119,7 @@ export default function AboutSection() {
               </div>
               <div>
                 <p className="text-2xl font-extrabold text-lime" style={{ fontFamily: "var(--font-syne)" }}>2026</p>
-                <p className="text-xs text-white/40 mt-1">Maroclear Internship</p>
+                <p className="text-xs text-white/40 mt-1">Royal Air Maroc Internship</p>
               </div>
             </div>
           </div>

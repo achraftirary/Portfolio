@@ -3,10 +3,10 @@
 import { ArrowDownRight, ArrowRight } from "lucide-react";
 
 const services = [
-  "Full-Stack Development",
-  "Data Engineering",
-  "Business Analysis & Modeling",
-  "Figma & UI Design",
+  "Microservices Architecture",
+  "Docker & Delivery",
+  "Backend Engineering",
+  "Documentation & Quality",
 ];
 
 export default function HeroSection() {
@@ -52,7 +52,7 @@ export default function HeroSection() {
         {/* Mobile: stacked layout */}
         <div className="mt-6 lg:hidden flex flex-col gap-5">
           <p className="text-sm text-dark/60 italic font-light leading-relaxed">
-            Building robust applications and transforming data into impactful digital solutions.
+            Building robust systems with microservices, clean APIs, and production-ready delivery practices.
           </p>
           <ul className="flex flex-col gap-2.5">
             {services.map((s) => (
@@ -67,7 +67,7 @@ export default function HeroSection() {
               Engineering Student @ INSEA
             </p>
             <p className="text-sm text-dark/60 leading-relaxed">
-              Specialized in data engineering and software development. Passionate about building impactful projects.
+              Specialized in software engineering, distributed systems, and delivery best practices. Passionate about building maintainable products with strong documentation.
             </p>
             <a
               href="#projects"
@@ -82,7 +82,7 @@ export default function HeroSection() {
         <div className="hidden lg:grid mt-10 grid-cols-2 gap-20 items-start">
           <div>
             <p className="text-base text-dark/60 italic font-light leading-relaxed max-w-xs mb-8">
-              Building robust applications and transforming data into impactful digital solutions.
+              Building robust systems with microservices, clean APIs, and production-ready delivery practices.
             </p>
             <ul className="flex flex-col gap-3">
               {services.map((s) => (
@@ -98,11 +98,11 @@ export default function HeroSection() {
               Engineering Student @ INSEA
             </p>
             <h2 className="text-xl font-bold mb-4 leading-tight" style={{ fontFamily: "var(--font-syne)" }}>
-              <span className="block">Building Digital</span>
-              <span className="block">Solutions</span>
+              <span className="block">Building Reliable</span>
+              <span className="block">Systems</span>
             </h2>
             <p className="text-sm text-dark/60 leading-relaxed mb-6">
-              Specialized in data engineering and software development. Passionate about building impactful projects — from full-stack web apps to data pipelines and interactive dashboards.
+              Specialized in software engineering, distributed systems, and delivery best practices. Passionate about maintainable products, clear documentation, and production-grade architecture.
             </p>
             <a
               href="#projects"
